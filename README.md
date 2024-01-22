@@ -25,7 +25,7 @@ Mobile
 
 ### Links
 
-- Live Site URL: [Github](https://rylulu.github.io/Recipe-Page/)
+- Live Site URL: [Github](https://rylulu.github.io/Results-Summary-Component/)
 
 ## My process
 
