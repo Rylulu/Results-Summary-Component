@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --reactcolor: hsl(0, 100%, 67%);
+  --memcolor: hsl(39, 100%, 56%);
+  --verbcolor: hsl(166, 100%, 37%);
+  --viscolor: hsl(234, 85%, 45%);
+  --white: hsl(0, 0%, 100%);
+  --offwhite: hsl(221, 100%, 96%);
+  --lavender: hsl(241, 100%, 89%);
+  --offblack: hsl(224, 30%, 27%);
+  --purplish: hsl(252, 100%, 67%);
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.bigcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--white);
+  box-shadow: 1rem 1rem 1rem var(--offwhite);
+  width: 75vh;
+}
+
+.smolcontainer,
+.smolcontainer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+}
+
+.smolcontainer {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  color: var(--offwhite);
+  align-items: center;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.result,
+.description {
+  color: var(--lavender);
+}
+
+.total {
+  color: var(--purplish);
+}
+
+.score {
+  font-size: 4em;
+}
+
+.great,
+.result,
+.summary {
+  font-size: 1.5rem;
+}
+
+.description {
+  text-align: center;
+  padding: 1rem;
+}
+
+.summary {
+  color: var(--offblack);
+  margin-bottom: 1rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+li span {
+  color: var(--offblack);
+}
+
+li:first-child {
+  list-style-position: inside;
+}
+
+li:nth-child(2) {
+  list-style: none;
+}
+
+.Reaction {
+  list-style: url(assets/images/icon-reaction.svg);
+  background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.Reactcolor {
+  color: var(--reactcolor);
+}
+
+.Memory {
+  list-style: url(assets/images/icon-memory.svg);
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.Memcolor {
+  color: var(--memcolor);
+}
+
+.Verbal {
+  list-style: url(assets/images/icon-verbal.svg);
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.Verbcolor {
+  color: var(--verbcolor);
+}
+
+.Visual {
+  list-style: url(assets/images/icon-visual.svg);
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.Viscolor {
+  color: var(--viscolor);
+}
+
+button {
+  background-color: var(--offblack);
+  color: var(--offwhite);
+  font-size: 1rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 33px;
+  margin-top: 1rem;
+}
+
+button:active {
+  background-color: hsl(241, 81%, 54%);
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--purplish);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .bigcontainer {
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .smolcontainer {
+    border-radius: 0 0 20px 20px;
+  }
+}
